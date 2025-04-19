@@ -10,17 +10,6 @@ type Props = {
 };
 
 const Nav = ({ openNav }: Props) => {
-  const [navBg, setNavBg] = useState(false);
-  useEffect(() => {
-    const handler = () => {
-      window.scrollY >= 90 ? setNavBg(true) : setNavBg(false);
-    };
-    window.addEventListener("scroll", handler);
-    return () => {
-      window.removeEventListener("scroll", handler);
-    };
-  }, []);
-
   return (
     <div className="w-full transition-all duration-200 h-[12vh] z-[1000] fixed">
       <div className="flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto">
