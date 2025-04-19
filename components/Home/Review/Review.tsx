@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -38,7 +39,26 @@ const Review = () => {
           responsive={responsive}
           showDots
         >
-          <ReviewCard />
+          <ReviewCard
+            job="Asistente Soporte y Redes"
+            name="Patricio Torres"
+            image="/images/c1.png"
+          />
+          <ReviewCard
+            job="Administrativa RSE"
+            name="Camila Zúñiga"
+            image="/images/c2.png"
+          />
+          <ReviewCard
+            job="La mejor"
+            name="Camilita Paz"
+            image="/images/c1.png"
+          />
+          <ReviewCard
+            job="Mi 100%"
+            name="Cami mi amor"
+            image="/images/c2.png"
+          />
         </Carousel>
       </div>
     </div>
