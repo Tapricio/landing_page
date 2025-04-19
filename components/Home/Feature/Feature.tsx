@@ -60,6 +60,8 @@ const Feature = () => {
         <div className="grid mt-16 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (
             <div
+              data-aos="flip-right"
+              data-aos-delay={`${index * 50}`}
               key={index}
               className="flex items-center justify-left p-4 bg-white rounded-lg shadow-md space-x-3"
             >

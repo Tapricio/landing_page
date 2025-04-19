@@ -9,28 +9,40 @@ const WhyChoose = () => {
       </h1>
       <div className="mt-20 grid w-[90%] mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12">
         {/* Cards */}
-        <div>
+        <div data-aos="fade-right" data-aos-anchor-placement="top-center">
           <WhyChooseCard
             image="/images/i1.png"
             title="Crea una cuenta gratis"
             linkText="Comienza a ganar"
           />
         </div>
-        <div>
+        <div
+          data-aos="fade-right"
+          data-aos-delay="100"
+          data-aos-anchor-placement="top-center"
+        >
           <WhyChooseCard
             image="/images/i2.png"
             title="Estadisticas de usuario"
             linkText="Ingresa a tu cuenta"
           />
         </div>
-        <div>
+        <div
+          data-aos="fade-right"
+          data-aos-delay="150"
+          data-aos-anchor-placement="top-center"
+        >
           <WhyChooseCard
             image="/images/i3.png"
             title="Seguros y confiables"
             linkText="Descarga la App"
           />
         </div>
-        <div>
+        <div
+          data-aos="fade-right"
+          data-aos-delay="200"
+          data-aos-anchor-placement="top-center"
+        >
           <WhyChooseCard
             image="/images/i4.png"
             title="Rapido soporte al usuario "

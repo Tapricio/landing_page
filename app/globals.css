@@ -43,4 +43,8 @@ utilities – Utilidades personalizadas como .text-shadow, .filter-none, etc. */
   .nav__link {
     @apply relative text-base font-medium w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-pink-700 after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition after:duration-300 after:origin-right;
   }
+
+  .defaultClickeableButton {
+    @apply bg-blue-600 hover:bg-blue-700 text-white font-bold transition-all duration-300 text-sm md:text-lg cursor-pointer;
+  }
 }

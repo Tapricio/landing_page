@@ -42,7 +42,7 @@ const Review = () => {
           <ReviewCard
             job="Asistente Soporte y Redes"
             name="Patricio Torres"
-            image="/images/c1.png"
+            image="/images/amor.png"
           />
           <ReviewCard
             job="Administrativa RSE"
