@@ -20,13 +20,9 @@ const Nav = ({ openNav }: Props) => {
       window.removeEventListener("scroll", handler);
     };
   }, []);
-  let bbg = navBg ? "bg-white shadow-md" : "";
 
   return (
-    <div
-      className={`w-full transition-all duration-200 h-[12vh] z-[1000] fixed ${bbg}
-      }`}
-    >
+    <div className="w-full transition-all duration-200 h-[12vh] z-[1000] fixed">
       <div className="flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto">
         {/* LOGO */}
         <Logo />
