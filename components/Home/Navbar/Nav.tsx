@@ -10,10 +10,16 @@ type Props = {
 };
 
 const Nav = ({ openNav }: Props) => {
-  const [navBg, setNavBg] = useState(false);
+  const [navBg, setNavBg] = useState("");
+
   useEffect(() => {
     const handler = () => {
-      window.scrollY >= 90 ? setNavBg(true) : setNavBg(false);
+      /* window.scrollY >= 90 ? setNavBg(true) : setNavBg(false); */
+      if (window.scrollY >= 90) {
+        setNavBg("bg-white shadow-md");
+      } else {
+        setNavBg("");
+      }
     };
     window.addEventListener("scroll", handler);
     return () => {
@@ -23,9 +29,10 @@ const Nav = ({ openNav }: Props) => {
 
   return (
     <div
-      className={`w-full transition-all duration-200 h-[12vh] z-[1000] fixed ${
+      /* className={`w-full transition-all duration-200 h-[12vh] z-[1000] fixed ${
         navBg ? "bg-white shadow-md" : ""
-      }`}
+      }`} */
+      className={`w-full transition-all duration-200 h-[12vh] z-[1000] fixed ${navBg}`}
     >
       <div className="flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto">
         {/* LOGO */}
