@@ -42,23 +42,11 @@ const Review = () => {
           <ReviewCard
             job="Asistente Soporte y Redes"
             name="Patricio Torres"
-            image="/images/amor.png"
-          />
-          <ReviewCard
-            job="Administrativa RSE"
-            name="Camila Zúñiga"
-            image="/images/c2.png"
-          />
-          <ReviewCard
-            job="La mejor"
-            name="Camilita Paz"
             image="/images/c1.png"
           />
-          <ReviewCard
-            job="Mi 100%"
-            name="Cami mi amor"
-            image="/images/c2.png"
-          />
+          <ReviewCard job="test" name="test" image="/images/c2.png" />
+          <ReviewCard job="test2" name="test2" image="/images/c1.png" />
+          <ReviewCard job="test3" name="test3" image="/images/c2.png" />
         </Carousel>
       </div>
     </div>
