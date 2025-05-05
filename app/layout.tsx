@@ -3,6 +3,7 @@ import "./globals.css";
 import { Poppins } from "next/font/google";
 import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
 import Footer from "@/components/Home/Footer/Footer";
+import { ReactQueryProvider } from "@/components/providers/ReactQueryProvider";
 
 const font = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -22,9 +23,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${font.className} antialiased`}>
-        <ResponsiveNav />
-        {children}
-        <Footer />
+        <ReactQueryProvider>
+          <ResponsiveNav />
+          {children}
+          <Footer />
+        </ReactQueryProvider>
       </body>
     </html>
   );

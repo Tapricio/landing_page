@@ -16,7 +16,7 @@ const Nav = ({ openNav }: Props) => {
     const handler = () => {
       /* window.scrollY >= 90 ? setNavBg(true) : setNavBg(false); */
       if (window.scrollY >= 90) {
-        setNavBg("bg-white shadow-md");
+        setNavBg("shadow-md");
       } else {
         setNavBg("");
       }
@@ -32,7 +32,7 @@ const Nav = ({ openNav }: Props) => {
       /* className={`w-full transition-all duration-200 h-[12vh] z-[1000] fixed ${
         navBg ? "bg-white shadow-md" : ""
       }`} */
-      className={`w-full transition-all duration-200 h-[12vh] z-[1000] fixed ${navBg}`}
+      className={`w-full transition-all duration-200 h-[12vh] z-[1000] fixed ${navBg} bg-white`}
     >
       <div className="flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto">
         {/* LOGO */}

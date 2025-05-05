@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="w-full md:pt-[12vh] h-screen bg-[#f7f6fb]">
+    <div className="w-full mt-[13vh] md:mt-[15vh] xl:mt-[10vh]">
       <div className="flex justify-center flex-col w-[90%] sm:w-[80%] h-[75%] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
           {/* Text content */}
@@ -19,8 +19,8 @@ const Hero = () => {
             </div>
             {/* Heading */}
             <h1
-              data-aos="fade-down"
-              className="text-2xl sm:text-4xl md:text-5xl mt-6 mb-6 font-bold md:leading-[3rem] lg:leading-[3.5rem]"
+              /* data-aos="fade-down" */
+              className="text-2xl sm:text-4xl md:text-5xl mb-6 font-bold md:leading-[3rem] lg:leading-[3.5rem]"
             >
               El compañero de trabajo perfecto para tus necesidades!
             </h1>

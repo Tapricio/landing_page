@@ -24,6 +24,15 @@ const Home = () => {
     initAOS();
   }, []);
 
+  useEffect(() => {
+    const handleResize = () => {
+      console.log("Tamaño actual:", window.innerWidth, "x", window.innerHeight);
+    };
+    window.addEventListener("resize", handleResize);
+    handleResize(); // llama una vez al cargar
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div className="overflow-hidden">
       <Hero />
